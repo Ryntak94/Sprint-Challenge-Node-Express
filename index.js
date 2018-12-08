@@ -12,6 +12,8 @@ server.use(parser);
 server.use(custom.maxNameLength);
 server.use(custom.completedIsBoolean);
 server.use(custom.descriptionIsString);
+server.use(custom.notesIsString);
+server.use(custom.projectIdIsString);
 server.use("/api/actions", actionRouter);
 server.use("/api/projects", projectRouter);
 
