@@ -13,7 +13,7 @@ server.use(custom.maxNameLength);
 server.use(custom.completedIsBoolean);
 server.use(custom.descriptionIsString);
 server.use("/api/actions", actionRouter);
-//server.use("/api/projects", projectRouter);
+server.use("/api/projects", projectRouter);
 
 server.listen(PORT, ()  =>  {
     console.log("Server listening on port:", PORT);
